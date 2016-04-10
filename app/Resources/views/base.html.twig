@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Git GitHub{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+	        <style>
+			    body { background-color: #cecece; font: 18px/1.5 sans-serif; padding: 0 15px;}
+			    h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
+			    h1 { font-size: 26px; text-align: center;}
+			    h2 { font-size: 16px; margin: 0.5em; }
+			    p, pre { margin: 0 0 0 0; font-size: 0.8em;}
+			    pre { font-size: 0.8em; background-color: #658956; }
+			    a { color: #0000F0;  }
+			    a:hover { text-decoration: none; }
+			    ul { margin: 0;}
+			    li { font-size: 0.8em; }
+			
+			</style>
+		{% endblock %}
+    </body>
+</html>
